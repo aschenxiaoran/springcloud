@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hx.springclouds.servers/hx.springclouds.servers.iml" filepath="$PROJECT_DIR$/hx.springclouds.servers/hx.springclouds.servers.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.springclouds.streams/hx.springclouds.streams.iml" filepath="$PROJECT_DIR$/hx.springclouds.streams/hx.springclouds.streams.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springclouds.iml" filepath="$PROJECT_DIR$/.idea/springclouds.iml" />
     </modules>

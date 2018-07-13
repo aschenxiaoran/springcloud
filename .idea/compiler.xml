@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hx.springclouds.servers" />
         <module name="hx.springclouds.streams" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hx.springclouds.servers" target="1.8" />
       <module name="hx.springclouds.streams" target="1.8" />
     </bytecodeTargetLevel>
   </component>
