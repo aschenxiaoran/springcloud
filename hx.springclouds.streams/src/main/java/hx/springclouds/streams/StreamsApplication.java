@@ -18,7 +18,7 @@ import javax.servlet.Filter;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-@EnableBinding(Sink.class)
+//@EnableBinding(Sink.class)
 public class StreamsApplication {
 
 //    @Autowired
@@ -26,11 +26,11 @@ public class StreamsApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(StreamsApplication.class);
 
-//    @Bean
-//    public Filter userContextFilter() {
-//        UserContextFilter userContextFilter = new UserContextFilter();
-//        return userContextFilter;
-//    }
+    @Bean
+    public Filter userContextFilter() {
+        UserContextFilter userContextFilter = new UserContextFilter();
+        return userContextFilter;
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(StreamsApplication.class, args);
