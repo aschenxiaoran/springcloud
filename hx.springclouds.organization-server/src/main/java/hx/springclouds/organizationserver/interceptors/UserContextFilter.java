@@ -1,4 +1,4 @@
-package hx.springclouds.streams.interceptors;
+package hx.springclouds.organizationserver.interceptors;
 
 
 import org.slf4j.Logger;
@@ -22,7 +22,7 @@ public class UserContextFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        logger.debug("进入 user context filter 针对于组织机构服务");
+        logger.error("进入 user context filter 针对于组织机构服务");
         HttpServletRequest httpServletRequest=(HttpServletRequest)request;
 
         logger.debug("获取到组织机构token:",httpServletRequest.getHeader(UserContext.AUTH_TOKEN));
@@ -32,10 +32,12 @@ public class UserContextFilter implements Filter {
         String authToken=httpServletRequest.getHeader(UserContext.AUTH_TOKEN);
         String orgId=httpServletRequest.getHeader(UserContext.ORG_ID);
 
+        logger.debug("***** I am entering the organization service id with correlation id: {}" ,correlationId);
         UserContextHolder.getUserContext().setCorrelationId(correlationId);
         UserContextHolder.getUserContext().setUserId(userId);
         UserContextHolder.getUserContext().setAuthToken(authToken);
         UserContextHolder.getUserContext().setOrgId(orgId);
+
         logger.debug("退出UserContextFilter");
         chain.doFilter(request,response);
 
