@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/hx.springclouds.organization-server/hx.springclouds.organization-server.iml" filepath="$PROJECT_DIR$/hx.springclouds.organization-server/hx.springclouds.organization-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.springclouds.servers/hx.springclouds.servers.iml" filepath="$PROJECT_DIR$/hx.springclouds.servers/hx.springclouds.servers.iml" />
       <module fileurl="file://$PROJECT_DIR$/hx.springclouds.streams/hx.springclouds.streams.iml" filepath="$PROJECT_DIR$/hx.springclouds.streams/hx.springclouds.streams.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hx.springclouds.zuulgateway/hx.springclouds.zuulgateway.iml" filepath="$PROJECT_DIR$/hx.springclouds.zuulgateway/hx.springclouds.zuulgateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hx.springclouds.zuulserver/hx.springclouds.zuulserver.iml" filepath="$PROJECT_DIR$/hx.springclouds.zuulserver/hx.springclouds.zuulserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springclouds.iml" filepath="$PROJECT_DIR$/.idea/springclouds.iml" />
     </modules>
   </component>

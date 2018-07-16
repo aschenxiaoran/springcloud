@@ -9,7 +9,7 @@
         <option value="$PROJECT_DIR$/hx.springclouds.streams/pom.xml" />
         <option value="$PROJECT_DIR$/hx.springclouds.servers/pom.xml" />
         <option value="$PROJECT_DIR$/hx.springclouds.organization-server/pom.xml" />
-        <option value="$PROJECT_DIR$/hx.springclouds.zuulgateway/pom.xml" />
+        <option value="$PROJECT_DIR$/hx.springclouds.zuulserver/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,4 +1,4 @@
-package hx.springclouds.zuulgateway;
+package hx.springclouds.zuulserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ZuulgatewayApplicationTests {
+public class ZuulserverApplicationTests {
 
     @Test
     public void contextLoads() {

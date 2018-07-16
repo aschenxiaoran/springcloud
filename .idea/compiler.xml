@@ -9,7 +9,7 @@
         <module name="hx.springclouds.organization-server" />
         <module name="hx.springclouds.servers" />
         <module name="hx.springclouds.streams" />
-        <module name="hx.springclouds.zuulgateway" />
+        <module name="hx.springclouds.zuulserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +17,7 @@
       <module name="hx.springclouds.servers" target="1.8" />
       <module name="hx.springclouds.streams" target="1.8" />
       <module name="hx.springclouds.zuulgateway" target="1.8" />
+      <module name="hx.springclouds.zuulserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package hx.springclouds.zuulgateway.utils;
+package hx.springclouds.zuulserver.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

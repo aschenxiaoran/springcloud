@@ -1,4 +1,4 @@
-package hx.springclouds.zuulgateway.utils;
+package hx.springclouds.zuulserver.utils;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRequest;
