@@ -25,20 +25,20 @@ public class UserContextFilter implements Filter {
         logger.error("进入 user context filter 针对于组织机构服务");
         HttpServletRequest httpServletRequest=(HttpServletRequest)request;
 
-        logger.debug("获取到组织机构token:",httpServletRequest.getHeader(UserContext.AUTH_TOKEN));
+        logger.error("获取到组织机构token:",httpServletRequest.getHeader(UserContext.AUTH_TOKEN));
 
         String correlationId=httpServletRequest.getHeader(UserContext.CORRELATION_ID);
         String userId=httpServletRequest.getHeader(UserContext.USER_ID);
         String authToken=httpServletRequest.getHeader(UserContext.AUTH_TOKEN);
         String orgId=httpServletRequest.getHeader(UserContext.ORG_ID);
 
-        logger.debug("***** I am entering the organization service id with correlation id: {}" ,correlationId);
+        logger.error("***** I am entering the organization service id with correlation id: {}" ,correlationId);
         UserContextHolder.getUserContext().setCorrelationId(correlationId);
         UserContextHolder.getUserContext().setUserId(userId);
         UserContextHolder.getUserContext().setAuthToken(authToken);
         UserContextHolder.getUserContext().setOrgId(orgId);
 
-        logger.debug("退出UserContextFilter");
+        logger.error("退出UserContextFilter");
         chain.doFilter(request,response);
 
     }

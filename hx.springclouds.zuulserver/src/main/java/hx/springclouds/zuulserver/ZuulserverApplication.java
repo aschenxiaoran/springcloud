@@ -15,9 +15,6 @@ import java.util.Collections;
 import java.util.List;
 
 @SpringBootApplication
-@EnableEurekaClient
-@EnableCircuitBreaker
-@EnableEurekaServer
 @EnableZuulProxy
 public class ZuulserverApplication {
 

@@ -1,9 +1,4 @@
-spring:
-  application:
-    name: organizationservice
-  profiles:
-    active:
-      default
+
 
 #Setting the logging levels for the service
 logging:
@@ -11,7 +6,6 @@ logging:
     com.netflix: WARN
     org.springframework.web: WARN
     com.thoughtmechanix: DEBUG
-
 
 eureka:
   instance:
@@ -22,5 +16,4 @@ eureka:
     fetchRegistry: true
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
-server:
-  port: 9000
+

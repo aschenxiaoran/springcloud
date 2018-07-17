@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zuulserver
+  profiles:
+    active:
+      default
+server:
+  port: 9000
+
