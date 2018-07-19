@@ -17,6 +17,8 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicHttpRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.zuul.filters.ProxyRequestHelper;
 import org.springframework.util.LinkedMultiValueMap;
@@ -35,6 +37,7 @@ public class SpecialRoutesFilter extends ZuulFilter {
     private static final int FILTER_ORDER = 1;
     private static final boolean SHOULD_FILTER = true;
     private ProxyRequestHelper helper = new ProxyRequestHelper();
+    private static final Logger logger=LoggerFactory.getLogger(SpecialRoutesFilter.class);
 
     @Autowired
     FilterUtils filterUtils;
